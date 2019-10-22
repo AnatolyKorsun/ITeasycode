@@ -1,0 +1,120 @@
+@import url("./fonts.css");
+body {
+  background-color: rgb(211, 207, 207);
+}
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120px;
+  width: 1250px;
+}
+.logo {
+  background-image: url(./images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 115px;
+  margin-right: 50px;
+}
+.haeder-search {
+  width: 845px;
+  height: 100%;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.search-item {
+  display: inline-block;
+  padding: 0;
+}
+.search-item input {
+  width: 425px;
+  height: 28px;
+  color: #1d1d1d;
+  font-family: Circe;
+  font-size: 0.75rem;
+  font-weight: 400;
+  border: none;
+  padding-left: 20px;
+  background-color: #f5f6f8;
+}
+.find-product {
+  width: 110px;
+  height: 30px;
+  color: white;
+  font-family: Circe;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: black;
+  border: none;
+  margin-left: -4px;
+}
+.find-product:hover {
+  background-color: red;
+}
+.language-ru {
+  width: 1.188rem;
+  height: 0.813rem;
+  opacity: 0.5;
+  color: #131313;
+  font-family: Circe;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.language-ua {
+  width: 1.188rem;
+  height: 0.813rem;
+  opacity: 0.5;
+  color: #131313;
+  font-family: Circe;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.search-product {
+  background-color: red;
+  width: 110px;
+  height: 30px;
+  border: none;
+}
+
+.navi {
+  height: 60px;
+  background-color: #009;
+}
+
+.country{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 195px;
+    height: 120px;
+    /* background-color: #fff; */
+}
+.country-map{
+background-image: url(./images/ukraine.png);
+width: 100px;
+height: 50px;
+background-position: center;
+background-repeat: no-repeat;
+align-items: center;
+}
+.country-flag{
+    width: 20px;
+    height: 20px;
+    background-image: url(./images/flag.png);
+    position: center;
+}
+.country-name::after{
+    content: "\2714";
+    width: 10px;
+    height: 10px;
+    display: inline-block;    
+    margin-left: 5px;
+}
