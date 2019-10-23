@@ -1,6 +1,15 @@
 @import url("./fonts.css");
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 body {
-  background-color: rgb(211, 207, 207);
+  background-color: rgb(202, 202, 202);
 }
 .header {
   margin-left: auto;
@@ -10,6 +19,7 @@ body {
   align-items: center;
   height: 120px;
   width: 1250px;
+  background-color: #fff;
 }
 .logo {
   background-image: url(./images/logo.png);
@@ -57,6 +67,7 @@ body {
 }
 .find-product:hover {
   background-color: red;
+  cursor: pointer;
 }
 .language-ru {
   width: 1.188rem;
@@ -65,7 +76,7 @@ body {
   color: #131313;
   font-family: Circe;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 .language-ua {
   width: 1.188rem;
@@ -76,45 +87,110 @@ body {
   font-size: 1rem;
   font-weight: 400;
 }
+.language-ua:hover,
+.language-ru:hover {
+  color: red;
+  cursor: pointer;
+}
 .search-product {
   background-color: red;
   width: 110px;
   height: 30px;
   border: none;
+  color: white;
+  font-family: Circe;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.search-product:hover {
+  background-color: #fff;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
 }
 
-.navi {
+.country {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 120px;
+}
+.country-map {
+  background-image: url(./images/ukraine.png);
+  width: 100px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.country-item {
+  vertical-align: center;
+}
+.country-item:hover {
+  cursor: pointer;
+}
+
+.country-flag {
+  display: inline-block;
+  width: 25px;
+  height: 18px;
+  background-image: url(./images/flag.png);
+  position: center;
+}
+.country-name {
+  display: inline-block;
+  padding-left: 5px;
+}
+.country-name::after {
+  content: "\2714";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-family: Circe;
+  font-size: 0.875rem;
+  font-weight: 700;
   height: 60px;
-  background-color: #009;
 }
-
-.country{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 195px;
-    height: 120px;
-    /* background-color: #fff; */
+.menu-item {
+  padding: 20px 0;
+  position: relative;
 }
-.country-map{
-background-image: url(./images/ukraine.png);
-width: 100px;
-height: 50px;
-background-position: center;
-background-repeat: no-repeat;
-align-items: center;
+.submenu {
+  position: absolute;
+  display: none;
+  width: 200px;
+  top: 100%;
+  left: 0;
+  padding-right: 30px;
+  line-height: 28px;
+  background-color: #fff;
 }
-.country-flag{
-    width: 20px;
-    height: 20px;
-    background-image: url(./images/flag.png);
-    position: center;
+.menu-item:hover > .submenu {
+  display: block;
 }
-.country-name::after{
-    content: "\2714";
-    width: 10px;
-    height: 10px;
-    display: inline-block;    
-    margin-left: 5px;
+.menu-item a:hover {
+  color: red;
 }
+.submenu-item {
+  padding-left: 30px;
+}
+/* .sel { */
+  /* display: none; */
+  /* display: inline-block; */
+  /* height: 10px; */
+  /* width: 5px; */
+  /* background-color: red; */
+/* } */
+/* .submenu-item:hover > .sel { */
+  /* display: inline-block; */
+/* } */
