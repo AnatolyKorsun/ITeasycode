@@ -265,11 +265,11 @@ main {
   font-weight: 700;
   text-align: center;
 }
-
+/* ___________________________________about */
 .about {
-  /* height: 770px; */
   width: 100vw;
   background-color: #fff;
+  padding-bottom: 150px;
 }
 
 .company {
@@ -353,13 +353,12 @@ main {
   font-display: row;
   justify-content: space-around;
 }
-.company-present-item{
+.company-present-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f5f6f8;
   width: 155px;
-
 }
 .number {
   font-family: Circe;
@@ -374,7 +373,7 @@ main {
   background-color: red;
   margin-bottom: 18px;
   transform: translateY(-40px);
-} 
+}
 
 .description {
   font-family: Circe;
@@ -382,4 +381,85 @@ main {
   font-weight: 700;
   text-align: center;
   transform: translateY(-40px);
+}
+
+.advantages {
+  width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-135px);
+}
+.visual-advantage {
+  width: 50%;
+  display: inline-block;
+  /* height: 500px; */
+  margin-right: 100px;
+}
+.advantage-navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: #1e1e1e;
+  font-family: Circe;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 55px;
+  align-items: center;
+}
+
+.advantage-image {
+  max-width: 100%;
+  height: auto;
+  background-image: url(./images/KBE_Chip.jpg);
+}
+.navi-left:hover,
+.navi-right:hover {
+  /* vertical-align: center; */
+  cursor: pointer;
+  color: red;
+}
+.left-icon {
+  display: inline-block;
+  background-image: url(./images/arrow-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 12px;
+}
+.right-icon {
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./images/arrow-left.png);
+  transform: rotate(180deg);
+}
+.qualities {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+.qualities h1{
+  color: #1e1e1e;
+font-family: Circe;
+font-size: 1.875rem;
+font-weight: 700;
+  padding-top: 55px;
+  margin-bottom: 80px;
+}
+.qualities h2{
+  color: #1e1e1e;
+font-family: Circe;
+font-size: 1.125rem;
+font-weight: 700;
+  margin-bottom: 45px;
+}
+.qualities p{
+  color: #1e1e1e;
+font-family: Circe;
+font-size: 0.875rem;
+font-weight: 700;
+line-height: 1.5rem;
 }
