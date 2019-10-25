@@ -1,6 +1,7 @@
 @import url("./fonts.css");
 ul,
-h2, h1 {
+h2,
+h1 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ a {
   color: black;
 }
 body {
-  background-color: rgb(202, 202, 202);
+  /* background-color: rgb(202, 202, 202); */
 }
 .header {
   margin-left: auto;
@@ -469,9 +470,10 @@ main {
   width: 945px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
-.news-caption{
+.news-caption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -480,63 +482,145 @@ main {
 }
 .news-caption h1 {
   color: #1e1e1e;
-font-family: Circe;
-font-size: 1.875rem;
-font-weight: 700;
-} 
-.more-news{
+  font-family: Circe;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.more-news {
   color: #1e1e1e;
-font-family: Circe;
-font-size: 0.875rem;
-font-weight: 700;
+  font-family: Circe;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
-.more-news:hover{
-  color:red
+.more-news:hover {
+  color: red;
 }
-.news{
+.news {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
 }
-.news-item{
+.news-item {
   width: 33%;
 }
 
-.news-date{
-display: inline-block;
-color: grey;
-font-family: Circe;
-font-size: 0.875rem;
-font-weight: 700;
-margin-bottom: 50px;
+.news-date {
+  display: inline-block;
+  color: grey;
+  font-family: Circe;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
-.news-line{
+.news-line {
   height: 1px;
   width: 50%;
   display: inline-block;
   border-bottom: 2px solid grey;
 }
-.news-item h2{
-font-family: Circe;
-color: #1e1e1e;
-font-size: 1rem;
-font-weight: 900;
-line-height: 1.5rem;
-margin-bottom: 30px;
+.news-item h2 {
+  font-family: Circe;
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
 }
-.news-item p{
+.news-item p {
   height: 60px;
   color: #1e1e1e;
-font-family: Circe;
-font-size: 0.813rem;
-font-weight: 400;
-line-height: 1.5rem;
-margin-bottom: 50px;
+  font-family: Circe;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 50px;
 }
-.read-more:hover{
-  color:red;
+.read-more:hover {
+  color: red;
 }
 .read-more span {
   padding-left: 20px;
+}
+/* _______________________________on-map */
+
+.on-map {
+  width: 100vw;
+  height: 400px;
+}
+/* _________________________________footer */
+.footer-head {
+  width: 100vw;
+  height: 55px;
+
+  background-color: #3f3a3a;
+}
+.footer-head-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Circe;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6b6b6b;
+  width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-head-container a:hover {
+  color: grey;
+}
+.footer-bottom {
+  height: 50px;
+  width: 100vw;
+  background-color: black;
+  padding-bottom: 30px;
+}
+.footer-bottom-container {
+  color: grey;
+  height: 100%;  
+  width: 945px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer-logo {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  background-image: url(./images/footer-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(10px);
+}
+.company-developer{
+  color: #464644;
+}
+.social-link{
+  width: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.link{
+  color: #464644;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.facebook-link{
+  background-image: url(./images/facebook.png);
+}
+.instagram-link{
+  background-image: url(./images/instagram.png);
+}
+.youtube-link{
+  background-image: url(./images/youtube.png);
 }
