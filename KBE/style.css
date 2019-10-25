@@ -198,9 +198,10 @@ body {
 main {
 }
 .product {
-  height: 455px;
+  /* height: 455px; */
   width: 100vw;
   background-color: #f5f6f8;
+  padding-bottom: 180px;
 }
 .product__caption {
   display: flex;
@@ -234,7 +235,7 @@ main {
   flex-direction: row;
   justify-content: space-around;
   width: 945px;
-  height: 190px;
+  /* height: 190px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -263,4 +264,122 @@ main {
   font-size: 0.75rem;
   font-weight: 700;
   text-align: center;
+}
+
+.about {
+  /* height: 770px; */
+  width: 100vw;
+  background-color: #fff;
+}
+
+.company {
+  width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-80px);
+}
+.company-description {
+  display: inline-block;
+  width: 290px;
+  margin-right: 85px;
+}
+.company-description h2 {
+  color: #1e1e1e;
+  font-family: Circe;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.company-description p {
+  color: #1e1e1e;
+  font-family: Circe;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 45px;
+}
+.more {
+  width: 180px;
+  height: 50px;
+  background-color: red;
+  color: #fff;
+  font-family: Circe;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: none;
+}
+.more:hover {
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
+}
+
+.company-present {
+  display: inline-block;
+  vertical-align: top;
+}
+.company-image {
+  position: relative;
+  margin-bottom: 50px;
+}
+.view {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 45px;
+  color: white;
+  background-color: red;
+  border: none;
+}
+.view:hover {
+  background-color: black;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.view-icon {
+  display: inline-block;
+  background-image: url(./images/triangle.png);
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  font-family: Circe;
+  color: red;
+  font-size: 0.75rem;
+}
+
+.company-indicators {
+  display: flex;
+  font-display: row;
+  justify-content: space-around;
+}
+.company-present-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f6f8;
+  width: 155px;
+
+}
+.number {
+  font-family: Circe;
+  font-size: 3.75rem;
+  font-weight: 300;
+  transform: translateY(-40px);
+  margin-bottom: 15px;
+}
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: red;
+  margin-bottom: 18px;
+  transform: translateY(-40px);
+} 
+
+.description {
+  font-family: Circe;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  transform: translateY(-40px);
 }
