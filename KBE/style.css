@@ -179,6 +179,7 @@ body {
 }
 .menu-item:hover > .submenu {
   display: block;
+  z-index: 1;
 }
 .menu-item a:hover {
   color: red;
@@ -186,18 +187,140 @@ body {
 .submenu-item {
   padding-left: 30px;
 }
-/* .sel { */
-/* display: none; */
-/* display: inline-block; */
-/* height: 10px; */
-/* width: 5px; */
-/* background-color: red; */
-/* } */
-/* .submenu-item:hover > .sel { */
-/* display: inline-block; */
-/* } */
-main {
+/* ___________________________________ slider */
+.main-slider {
+  width: 100vw;
+  /* height: 560px; */
+  background-color: red;
 }
+.slider {
+  display: inline-block;
+  position: relative;
+  width: 85%;
+  height: 700px;
+  background-image: url(./images/Profine.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-bar {
+  display: inline-block;
+  width: 14%;
+  height: 700px;
+  vertical-align: top;
+  background-color: red;
+}
+.slider-info {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 85px;
+  padding-top: 50px;
+}
+.slider-link {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide {
+  color: #fff;
+  font-size: 2.625rem;
+  font-weight: 300;
+  font-family: Circe;
+}
+.slide-number {
+  font-family: Circe;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+}
+.date {
+  color: white;
+  font-family: Circe;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.facebook-logo {
+  background-image: url(./images/facebook-logo.png);
+}
+.instagram-logo {
+  background-image: url(./images/instagram-logo.png);
+}
+.youtube-logo {
+  background-image: url(./images/youtube-logo.png);
+}
+.slider-caption {
+  position: absolute;
+  display: inline-block;
+  bottom: 40px;
+  left: 25%;
+  font-family: Circe;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+.slider-bottom-container {
+  display: inline-block;
+  width: 100vw;
+  height: 100px;
+  margin-top: -4px;
+}
+.slider-bottom-bar {
+  max-height: 95px;
+  display: inline-block;
+  width: 85%;
+}
+.slider-btn {
+  display: inline-block;
+  color: white;
+  font-family: Circe;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: top;
+  line-height: 100px;
+  width: 14%;
+  height: 100px;
+}
+.slider-btn-right{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  width: 14%;
+  color:white;
+}
+.slider-bottom {
+  display: inline-block;
+  line-height: 100px;
+  width: 85.69%;
+  min-height: 100px;
+  color:white;
+  background-color: #1e1e1e;
+}
+.slider-description{
+  display: inline-block;
+  padding-left: 50px;
+}
+.more-info{
+  display: inline-block;
+  /* margin-left: 200px; */
+color: #fff;
+}
+
+/* ________________________________product */
 .product {
   /* height: 455px; */
   width: 100vw;
