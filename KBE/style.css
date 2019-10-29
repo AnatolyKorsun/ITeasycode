@@ -189,6 +189,7 @@ body {
 }
 /* _______________________________________modal */
 .modal-backdrop {
+  display: none;
   position: relative;
   min-height: 100vh;
   min-width: 100vw;
@@ -251,6 +252,38 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+.modal-body{
+  display: flex;
+  flex-direction: row;
+  padding: 0 70px;
+  padding-top: 25px;
+}
+.body-column{
+  /* display: inline-block; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 25px;
+}
+.modal-body-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  background-color: red;
+  margin-bottom: 8px;
+}
+.country{
+  flex-direction: row;
+  align-items: center;;
+}
+.flag{
+  width: 30px;
+  height: 25px;
+  background-color: purple;
+  margin-right: 20px;
 }
 
 /* ___________________________________ slider */
