@@ -188,8 +188,14 @@ body {
   padding-left: 30px;
 }
 /* _______________________________________modal */
-.modal-backdrop {
+.visible{
+  display: block;
+}
+.hidden {
   display: none;
+  
+}
+    .modal-backdrop {
   position: relative;
   min-height: 100vh;
   min-width: 100vw;
