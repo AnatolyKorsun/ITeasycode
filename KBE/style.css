@@ -206,6 +206,7 @@ a {
 }
 .modal-window {
   background-color: #c0bebe;
+  z-index: 5;
   position: absolute;
   height: 31.25rem;
   width: 62.5rem;
@@ -438,6 +439,7 @@ a {
 
 }
 .slider-btn {
+  cursor: pointer;
   display: inline-block;
   color: white;
   background-color: #ff0000;
@@ -451,6 +453,7 @@ a {
   height: 6.25rem;
 }
 .slider-btn-right {
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   text-align: center;
