@@ -1,11 +1,4 @@
 'use strict'
-$(document).ready(function(){
-    $("a").click(function(){
-        alert("Hello");
-    });
-});
- 
-
 const countryBtn = document.querySelector(".country-item");
 const modalBackdrop = document.querySelector(".modal-backdrop");
 const closeBtn = document.querySelector(".close-btn");
