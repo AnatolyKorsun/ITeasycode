@@ -1,8 +1,8 @@
-$(document).ready(function(){
-    $("a").click(function(){
-        alert("Hello");
-    });
-});
+// $(document).ready(function(){
+//     $("a").click(function(){
+//         alert("Hello");
+//     });
+// });
  
 $(function() {
   
