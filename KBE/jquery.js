@@ -4,7 +4,7 @@
 //     });
 // });
  
-$(function() {
+// $(function() {
   
     var slideCount =  $(".slider-advantages ul li").length;
     var slideWidth =  $(".slider-advantages ul li").width();
@@ -41,7 +41,7 @@ $(function() {
         moveLeft();
       });
            
-})
+// })
 
 
 // counter_____________________________
